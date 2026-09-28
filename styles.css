@@ -59,6 +59,15 @@ main,
 }
 
 .atom-mark { width: 35px; height: 35px; color: var(--sky); }
+.theme-switch {
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.theme-switch:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 .hero {
   position: relative;
@@ -227,7 +236,7 @@ h1 {
   .site-header { min-height: 78px; }
   .identity { gap: 8px; font-size: 16px; }
   .atom-mark { width: 30px; height: 30px; }
-  .hero { min-height: 420px; padding: 77px 0 59px; }
+  .hero { min-height: 420px; padding: 77px clamp(20px, 5vw, 32px) 59px; }
   .orbit-decoration { top: auto; right: -24px; bottom: 15px; width: 180px; opacity: .35; transform: none; }
   .content-section { padding: 50px 0 56px; }
   .section-heading { grid-template-columns: 35px 1fr; }

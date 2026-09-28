@@ -1,0 +1,61 @@
+:root {
+  color-scheme: dark;
+  --paper: #101b2b;
+  --paper-deep: #172b3a;
+  --ink: #f5e8c7;
+  --blue: #80c8d2;
+  --sky: #42a6b5;
+  --muted: #b8b7a9;
+  --line: #665d48;
+  --yellow: #e7bb58;
+}
+
+body.dark-theme {
+  background:
+    radial-gradient(ellipse at 50% -18%, rgba(66, 166, 181, .13), transparent 54%),
+    var(--paper);
+  color: var(--ink);
+}
+
+.dark-theme a:focus-visible { outline-color: var(--yellow); }
+.dark-theme .site-header { border-bottom-color: var(--line); }
+.dark-theme .theme-switch { color: var(--yellow); }
+.dark-theme .hero {
+  border-bottom-color: var(--yellow);
+  background:
+    linear-gradient(90deg, transparent 0 7%, rgba(231, 187, 88, .1) 7.1%, transparent 7.3% 92.7%, rgba(231, 187, 88, .1) 92.9%, transparent 93%),
+    linear-gradient(135deg, rgba(231, 187, 88, .1), transparent 43%, rgba(66, 166, 181, .15));
+}
+.dark-theme .eyebrow,
+.dark-theme .entry-main > p { color: var(--muted); }
+.dark-theme .intro { color: #d4d2c6; }
+.dark-theme .contact-line { color: var(--muted); }
+.dark-theme .contact-line a,
+.dark-theme .research-meta,
+.dark-theme .section-index,
+.dark-theme .site-footer a { color: var(--blue); }
+.dark-theme .orbit-decoration .electron { stroke: var(--paper); }
+.dark-theme .content-section,
+.dark-theme .entry,
+.dark-theme .research-entry,
+.dark-theme .experience-entry { border-color: var(--line); }
+.dark-theme .section-heading h2 { color: var(--yellow); }
+.dark-theme .section-heading h2::after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 3px;
+  margin-top: 8px;
+  background: repeating-linear-gradient(90deg, var(--yellow) 0 8px, transparent 8px 12px);
+}
+.dark-theme .entry-main > p { color: #d4d2c6; }
+.dark-theme .entry-main > .entry-note,
+.dark-theme .entry-date,
+.dark-theme .research-status,
+.dark-theme .experience-detail,
+.dark-theme .site-footer { color: var(--muted); }
+.dark-theme .research-entry > p:not(.research-meta):not(.research-status),
+.dark-theme .experience-main > p { color: #d4d2c6; }
+.dark-theme .experience-number { color: var(--yellow); }
+.dark-theme .role-type { border-color: var(--line); color: var(--muted); }
+.dark-theme .site-footer a:hover { color: var(--yellow); }
